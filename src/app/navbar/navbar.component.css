@@ -1,0 +1,6 @@
+.containerNavbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: pink;
+  align-items: center;
+}
