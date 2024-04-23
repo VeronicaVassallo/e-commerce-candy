@@ -1,5 +1,10 @@
 <div class="containerCard">
-  <mat-card *ngFor="let product of dataParent" class="example-card">
+  <mat-card
+    *ngFor="let product of dataParent"
+    class="example-card"
+    [ngClass]="idsSelected.includes(product._id) ? 'borderCard' : ''"
+    id="{{ product._id }}"
+  >
     <mat-card-header>
       <mat-card-title>{{ product.nameProduct }}</mat-card-title>
       <mat-card-subtitle>{{ product.price }} €</mat-card-subtitle>
@@ -11,7 +16,9 @@
       </p>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button>Aggiungi al carello</button>
+      <button mat-button (click)="onAddProduct(product._id)">
+        Aggiungi al carello
+      </button>
     </mat-card-actions>
   </mat-card>
 </div>

@@ -13,3 +13,7 @@
   width: 100%;
   height: 50%;
 }
+
+.borderCard {
+  border: 3px solid red;
+}
