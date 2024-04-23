@@ -7,12 +7,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class NavbarComponent {
   @Output() sendDataEvent = new EventEmitter<string>();
-  searchValue = ''; //Questo dato deve essere tirato fuori nel parent
+  searchValue = ''; //il valore dell'input della ricerca viene passato fuori nel app-component
   onInputChange(e: any) {
     console.log((<HTMLInputElement>e.target).value);
     this.searchValue = (<HTMLInputElement>e.target).value;
   }
-
+  //all' click del bottone della barra di ricerca il dato viene inviato all' app-component
   sendData() {
     this.sendDataEvent.emit(this.searchValue);
   }

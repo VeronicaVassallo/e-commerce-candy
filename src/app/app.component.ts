@@ -7,9 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   /*TO DO:
-  1) Cicla i dati dell'array dei prodotti in base al valore dell'input che ti viene madato dalla navbar
-  e completa la barra di ricerca
-  2) Al onClik di ogni card aggiungi un bordino alla card stessa */
+  1) Al onClik di ogni card aggiungi un bordino alla card stessa */
   products = [
     {
       nameProduct: 'chewy rainbow',
@@ -58,7 +56,20 @@ export class AppComponent {
     },
   ];
 
+  productFiltered: {
+    nameProduct: string;
+    price: number;
+    description: string;
+    img: string;
+  }[] = this.products;
+  /*The getDataEvent() function utilizes the value from the search bar, 
+  which is passed from the navigation bar, to filter the products array. 
+  The filtered products are then passed to the main and card components to 
+  display them on the browser*/
   getDataEvent(value: string) {
-    console.log('Dati dal children', value);
+    this.productFiltered = this.products.filter((word) => {
+      return word.nameProduct.toLowerCase().includes(value.toLowerCase());
+    });
+    console.log('Dati dal children', this.productFiltered);
   }
 }
