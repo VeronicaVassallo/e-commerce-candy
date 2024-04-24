@@ -1,1 +1,8 @@
-<app-card [dataParent]="dataProducts"></app-card>
+<div>
+  <h3>Nel carrello ci sono:{{ counter }}</h3>
+  <!--TO DO: bring counter out in the navbar-->
+</div>
+<app-card
+  [dataParent]="dataProducts"
+  (sendDataCounter)="onGetCounter($event)"
+></app-card>

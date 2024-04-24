@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class MainComponent {
   @Input() dataProducts: any;
+  counter: number = 0;
+
+  onGetCounter(value: number) {
+    console.log('Counter:', value);
+    this.counter = value;
+  }
 }
