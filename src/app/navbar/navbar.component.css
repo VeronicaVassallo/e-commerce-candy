@@ -3,18 +3,5 @@
   justify-content: space-around;
   background-color: pink;
   align-items: center;
-}
-.containerCart {
-  margin-top: 20px;
-}
-.cartCounter {
-  width: 18px;
-  height: 18px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 50%;
-  position: relative;
-  z-index: 2;
-  top: -39px;
-  right: -15px;
-  text-align: center;
+  padding: 1%;
 }

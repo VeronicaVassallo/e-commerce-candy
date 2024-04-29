@@ -1,0 +1,31 @@
+.containerCart {
+  background-color: pink;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 1.5vh;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+  border: 5px palevioletred solid;
+}
+.containerCart:hover {
+  border: 5px rgb(209, 168, 4) solid;
+}
+.containerCart span {
+  position: relative;
+  top: 15px;
+  left: 13px;
+}
+.cartCounter {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  top: -25px;
+  right: -27px;
+  text-align: center;
+}

@@ -77,4 +77,10 @@ export class AppComponent {
     });
     console.log('Dati dal children', this.productFiltered);
   }
+
+  counter: number = 0;
+  onGetDataCounterFromMain(value: number) {
+    this.counter = value;
+    console.log('Dati dal Main inviati:', this.counter, value);
+  }
 }

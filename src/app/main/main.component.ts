@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class MainComponent {
   @Input() dataProducts: any;
+
   counter: number = 0;
 
   onGetCounter(value: number) {

@@ -1,6 +1,8 @@
 <div>
-  <h3>Nel carrello ci sono:{{ counter }}</h3>
-  <!--TO DO: bring counter out in the navbar-->
+  <div class="containerCart">
+    <span class="material-icons"> shopping_cart </span>
+    <div class="cartCounter">{{ counter }}</div>
+  </div>
 </div>
 <app-card
   [dataParent]="dataProducts"
