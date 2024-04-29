@@ -1,0 +1,7 @@
+.containerFooter {
+  background-color: pink;
+}
+.containerFooter div {
+  display: flex;
+  justify-content: space-around;
+}
