@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class MainComponent {
   @Input() dataProducts: any;
 
-  counter: number = 0;
+  counter = 0;
 
   onGetCounter(value: number) {
     console.log('Counter:', value);

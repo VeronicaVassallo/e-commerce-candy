@@ -10,9 +10,7 @@
   cursor: pointer;
   border: 5px palevioletred solid;
 }
-.containerCart:hover {
-  border: 5px rgb(209, 168, 4) solid;
-}
+
 .containerCart span {
   position: relative;
   top: 15px;

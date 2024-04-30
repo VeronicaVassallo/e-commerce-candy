@@ -1,9 +1,10 @@
 <div>
-  <div class="containerCart">
+  <div class="containerCart" appHighlighter>
     <span class="material-icons"> shopping_cart </span>
     <div class="cartCounter">{{ counter }}</div>
   </div>
 </div>
+
 <app-card
   [dataParent]="dataProducts"
   (sendDataCounter)="onGetCounter($event)"

@@ -22,6 +22,9 @@ import { MatListModule } from '@angular/material/list';
 //Angular material Icons
 import { MatIconModule } from '@angular/material/icon';
 
+//My directives
+import { HighlighterDirective } from './directives/highlighter.directive';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +32,7 @@ import { MatIconModule } from '@angular/material/icon';
     FooterComponent,
     MainComponent,
     CardComponent,
+    HighlighterDirective,
   ],
   imports: [
     BrowserModule,
