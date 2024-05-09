@@ -25,6 +25,10 @@ import { MatIconModule } from '@angular/material/icon';
 //My directives
 import { HighlighterDirective } from './directives/highlighter.directive';
 
+//My services
+import { DataProductsService } from './services/data-products.service';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +37,7 @@ import { HighlighterDirective } from './directives/highlighter.directive';
     MainComponent,
     CardComponent,
     HighlighterDirective,
+    ProfilePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +49,11 @@ import { HighlighterDirective } from './directives/highlighter.directive';
     MatIconModule,
     MatListModule,
   ],
-  providers: [provideClientHydration(), provideAnimationsAsync()],
+  providers: [
+    provideClientHydration(),
+    provideAnimationsAsync(),
+    DataProductsService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

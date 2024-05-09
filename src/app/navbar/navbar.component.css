@@ -5,3 +5,20 @@
   align-items: center;
   padding: 1%;
 }
+.containerNavbarLinks {
+  display: flex;
+  width: 20%;
+}
+.containerNavbarLinks div {
+  width: 35%;
+  text-align: center;
+}
+.containerNavbarLinks div a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+.containerNavbarLinks a:hover {
+  background-color: aliceblue;
+}

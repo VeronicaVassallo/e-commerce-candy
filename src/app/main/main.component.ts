@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input } from '@angular/core';
+import { DataProductsService } from '../services/data-products.service';
 
 @Component({
   selector: 'app-main',
@@ -8,6 +9,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class MainComponent {
   @Input() dataProducts: any;
 
+  constructor(private serviceDataProducts: DataProductsService) {}
+
+  products = this.serviceDataProducts.products;
   counter = 0;
 
   onGetCounter(value: number) {
